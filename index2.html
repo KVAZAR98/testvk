@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <img src="fon.jpg" class="background"/>
+<img src="fon.jpg" class="background" />
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover" />
     <link rel="stylesheet" href="style.css">
     <title>КвизТестОпросник</title>
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    <script>
+        // Отправляет событие инициализации нативному клиенту
+        vkBridge.send('VKWebAppInit');
+    </script>
 </head>
 
 <body>
@@ -16,7 +23,7 @@
             <button id="3" onclick="a()" class="btn">Третья кнопка</button>
             <button id="4" onclick="a()" class="btn">Четвёртая кнопка</button>
         </div>
-        
+
         <script type="text/javascript" src="script.js"></script>
 </body>
 
