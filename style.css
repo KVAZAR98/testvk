@@ -1,61 +1,65 @@
-.btn {
-	display: block;
-	box-sizing: border-box;
-	padding: 0 150px;
-	margin: 0 15px 5px 0;
-	outline: 100px;
-	border: 1px solid grey;
-	border-radius: 5px;
-	line-height: 38px;
-	font-weight: 600;
-	text-decoration: none;
-	color: #6c757d;
-	background-color: #fff;
-	cursor: pointer;
-	user-select: none;
-	appearance: none;
-	touch-action: manipulation;
-
+.btn-2 {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    height: 50px;
+    width: 250px;
+    line-height: 50px;
+    font-size: 35px;
+    font-weight: normal;
+    text-decoration: none;
+    vertical-align: top;
+    color: #fff;
+    background-color: #5181b8;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    overflow: hidden;
 }
 
-.btn:focus {
-	box-shadow: 0 0 0 3px rgb(108 117 125 / 50%);
+.btn-2:focus-visible {
+    box-shadow: 0 0 0 3px lightskyblue;
 }
 
-.btn:hover {
-	color: #fff;
-	background-color: #6c757d;
-	border-color: #6c757d;
+.btn-2:hover {
+    opacity: 0.88;
 }
 
-.btn:active {
-	color: #fff;
-	background-color: #6c757d;
-	border-color: #6c757d;
+.btn-2:active {
+    line-height: 32px;
 }
 
-.btn:disabled {
-	pointer-events: none;
-	opacity: 0.65;
+.btn-2:disabled {
+    pointer-events: none;
+    opacity: 0.65;
 }
 
-div.text2 {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-
+.text2 {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
 }
+
+
+
+
+
 
 
 
 .text1 {
     display: flex;
     justify-content: center;
-  	height: 100vh;
+    height: 100vh;
     background-color: #000;
     overflow: hidden;
-	margin-top: 5%;
+    margin-top: 7%;
 
 }
 
@@ -80,7 +84,7 @@ h1 span {
     left: 0;
     transform: translate(-50%, -50%);
     -webkit-clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
-            clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+    clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
 }
 
 h1::before,
@@ -94,32 +98,48 @@ h1::after {
 h1::before {
     animation: crack1 2.5s linear forwards;
     -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
 }
 
 h1::after {
     animation: crack2 2.5s linear forwards;
     -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
-            clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+    clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
 }
 
 @keyframes shake {
-    5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
+
+    5%,
+    15%,
+    25%,
+    35%,
+    55%,
+    65%,
+    75%,
+    95% {
         filter: blur(0.018em);
         transform: translateY(0.018em) rotate(0deg);
     }
 
-    10%, 30%, 40%, 50%, 70%, 80%, 90% {
+    10%,
+    30%,
+    40%,
+    50%,
+    70%,
+    80%,
+    90% {
         filter: blur(0.01em);
         transform: translateY(-0.018em) rotate(0deg);
     }
 
-    20%, 60% {
+    20%,
+    60% {
         filter: blur(0.03em);
         transform: translate(-0.018em, 0.018em) rotate(0deg);
     }
 
-    45%, 85% {
+    45%,
+    85% {
         filter: blur(0.03em);
         transform: translate(0.018em, -0.018em) rotate(0deg);
     }
@@ -131,7 +151,9 @@ h1::after {
 }
 
 @keyframes crack1 {
-    0%, 95% {
+
+    0%,
+    95% {
         transform: translate(-50%, -50%);
     }
 
@@ -141,7 +163,9 @@ h1::after {
 }
 
 @keyframes crack2 {
-    0%, 95% {
+
+    0%,
+    95% {
         transform: translate(-50%, -50%);
     }
 
@@ -149,25 +173,61 @@ h1::after {
         transform: translate(-49%, -53%);
     }
 }
+
 body {
     /* Путь к изображению относительно данного файла */
     background-image: url(fon.jpg);
- 
+    background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)
+    ),
+    /* bottom, image */
+    url(fon.jpg);
+
+   
     /* Центрирование изображения по вертикали и горизонтали всегда */
     background-position: center center;
- 
+
     /* Запрещаем повтор изображения */
     background-repeat: no-repeat;
- 
+
     /* Фиксируем изображение - оно остается на месте при прокрутке окна */
     background-attachment: fixed;
- 
+
     /* Изображение будет масштабироваться в зависимости от размеров контейнера */
     background-size: cover;
- 
+
     /* Цвет фона изображения, который будет показываться пока изображение не загрузится */
-    background-color:#464646;
- 
+    background-color: #464646;
+
     /* Эквивалентная сокращенная запись
     * background: url(background-photo.jpg) center center cover no-repeat fixed;
-    */}
+    */
+}
+
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 36px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-33:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
