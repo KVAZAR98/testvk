@@ -55,14 +55,14 @@ div.text2 {
   	height: 100vh;
     background-color: #000;
     overflow: hidden;
-	
+	margin-top: 5%;
 
 }
 
 h1 {
     position: relative;
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size: calc(3px + 5vw);
+    font-size: calc(10px + 5vw);
     font-weight: 700;
     color: #fff;
     letter-spacing: 0.02em;
