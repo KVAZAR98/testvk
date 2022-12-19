@@ -1,11 +1,7 @@
 
 
-function go(event){
-    event.preventDefault()
-document.getElementById("start").classList.add("hidden")
-document.getElementById("question").classList.remove("hidden") 
 
-}
+
 vkBridge.send('VKWebAppInit');
 
 vkBbridge.send('VKWebAppGetEmail')
@@ -30,3 +26,10 @@ console.log(a)
 //ocument.getElementById("div1").classList.add("hidden");
 
 
+
+/*function go(event){
+    event.preventDefault()
+document.getElementById("start").classList.add("hidden")
+document.getElementById("question").classList.remove("hidden") 
+
+}*/
