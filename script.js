@@ -1,8 +1,9 @@
-vkBridge.send('VKWebAppGetEmail')
+let a = vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
     console.log(data)
-   
+   alert(data)
+   alert(a)
   }
   })
   .catch((error) => {
