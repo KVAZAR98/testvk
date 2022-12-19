@@ -6,9 +6,9 @@ document.getElementById("start").classList.add("hidden")
 document.getElementById("question").classList.remove("hidden") 
 
 }
+vkBridge.send('VKWebAppInit');
 
-
-(go) = vkBbridge.send('VKWebAppGetEmail')
+vkBbridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
       // Доступ к электронной почте получен

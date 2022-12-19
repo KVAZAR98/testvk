@@ -8,9 +8,12 @@
     <title>КвизТестОпросник</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
-    <script type="text/javascript" src="script.js"></script>
-    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-    <script>vkBridge.send('VKWebAppInit');
+    
+        <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+        <script>
+            // Отправляет событие инициализации нативному клиенту
+            vkBridge.send('VKWebAppInit');
+          </script>
     </script>
 </head>
 
