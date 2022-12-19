@@ -1,7 +1,6 @@
 vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
-     a = (data.email)
     console.log(data.email)
    alert(a)
   }
