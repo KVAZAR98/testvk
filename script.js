@@ -1,23 +1,18 @@
-let b
-let a = vkBridge.send('VKWebAppGetEmail')
+
+const token = bridge.send('VKWebAppGetAuthToken', { 
+  app_id: 51501105, 
+  scope: 'friends,status,photos'
+  })
   .then((data) => { 
-    if (data.email) {
-      
-  b = (data.email);
-      
-  
-}
+    if (data.access_token) {
+     alert(token)
+    }
   })
   .catch((error) => {
     // Ошибка
     console.log(error);
   });
-  //document.getElementById("text").innerHTML = a(data.email);
- 
- 
- function go()   {
-  alert(b);
-}
+
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
 
