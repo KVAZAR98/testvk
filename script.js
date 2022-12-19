@@ -2,7 +2,7 @@
 
 let a = (data.email)
 
-vkBridge.send('VKWebAppInit');
+
 
 vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
