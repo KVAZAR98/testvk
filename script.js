@@ -15,7 +15,7 @@ let a = vkBridge.send('VKWebAppGetEmail')
   //document.getElementById("text").innerHTML = a(data.email);
  
  
-go() = () => {
+ function go()   {
   alert(b);
 }
 //document.getElementById("div2").classList.remove("hidden");
