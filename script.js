@@ -10,8 +10,9 @@ let a = vkBridge.send('VKWebAppGetEmail')
     // Ошибка
     console.log(error);
   });
-
- (go) = () => {alert(a.email);
+a.then(data.email)
+ 
+  (go) = () => {alert(a);
  alert(data.email)
  
 }
