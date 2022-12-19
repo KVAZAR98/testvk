@@ -1,5 +1,10 @@
 
+function go(){
+    event.preventDefault()
+document.getElementById("start").classList.add("hidden")
+document.getElementById("question").classList.remove("hidden") 
 
+}
 
 
 
