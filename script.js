@@ -3,7 +3,8 @@ let a = vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
       document.getElementById("text").innerHTML = (data.email);
-  console.log(data.email)
+  b = (data.email);
+      console.log(data.email);
   
 }
   })
