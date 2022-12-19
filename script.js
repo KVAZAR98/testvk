@@ -1,15 +1,16 @@
 
 
-
+let a = (data.email)
 
 vkBridge.send('VKWebAppInit');
 
 vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
-      // Доступ к электронной почте получен
+     a = (data.email)
     console.log(data.email)
-    }
+   alert(a)
+  }
   })
   .catch((error) => {
     // Ошибка
