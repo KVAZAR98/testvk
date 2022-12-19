@@ -16,6 +16,7 @@ div {
     left: 50%;
     transform: translate(-50%);
     text-align: center;   
+    border: 2px solid #ffffff;
 }
 
 
@@ -32,6 +33,13 @@ h2{
     font-weight: 700;
     color: #fff;   
 }
+.div1{
+    position: relative;
+    margin-top: 350px;
+    text-align: center;
+  
+}
+
 .button-33 {
  
     background-color: #c2fbd7;
