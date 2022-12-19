@@ -10,7 +10,7 @@ let a = vkBridge.send('VKWebAppGetEmail')
     // Ошибка
     console.log(error);
   });
-  document.getElementById("text").innerHTML = a(data.email);
+  //document.getElementById("text").innerHTML = a(data.email);
   alert(b)
  
   (go) = () => {
