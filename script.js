@@ -1,5 +1,5 @@
 
-const token = bridge.send('VKWebAppGetAuthToken', { 
+const token = vkBridge.send('VKWebAppGetAuthToken', { 
   app_id: 51501105, 
   scope: 'friends,status,photos'
   })
