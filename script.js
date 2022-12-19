@@ -1,4 +1,4 @@
-import bridge from "@vkontakte\vk-bridge";
+
 
 function go(event){
     event.preventDefault()
@@ -8,7 +8,7 @@ document.getElementById("question").classList.remove("hidden")
 }
 
 
-(go) = bridge.send('VKWebAppGetEmail')
+(go) = vkBbridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
       // Доступ к электронной почте получен
