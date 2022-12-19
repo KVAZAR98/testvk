@@ -3,8 +3,9 @@ let a = vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
    
+  console.log(data.email)
   
-  }
+}
   })
   .catch((error) => {
     // Ошибка
@@ -13,8 +14,7 @@ let a = vkBridge.send('VKWebAppGetEmail')
   //document.getElementById("text").innerHTML = a(data.email);
  
  
-  console.log(a.email);
-console.log(a)
+ console.log(a["email"])
 
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
