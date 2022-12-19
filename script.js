@@ -13,7 +13,7 @@ let a = vkBridge.send('VKWebAppGetEmail')
   document.getElementById("text").innerHTML = a.data.email
   a.then(data.email)
  
-  (go) = () => {alert(a);
+  (go) = (data.email){alert(a);
  alert(data.email)
  alert(a.then(data.email))
 
