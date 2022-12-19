@@ -2,7 +2,7 @@
 let a = vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
-   
+   document.getElementById("text").innerHTML = (data.email)
   
   }
   })
@@ -11,9 +11,10 @@ let a = vkBridge.send('VKWebAppGetEmail')
     console.log(error);
   });
 
-alert(a.email);
-
-
+ (go) = () => {alert(a.email);
+ alert(a)
+ alert(data)
+}
 
 
 //document.getElementById("div2").classList.remove("hidden");
