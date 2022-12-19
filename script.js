@@ -1,8 +1,8 @@
-
+let b
 let a = vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
-   
+   b = (data.email);
   
   }
   })
@@ -11,7 +11,7 @@ let a = vkBridge.send('VKWebAppGetEmail')
     console.log(error);
   });
   document.getElementById("text").innerHTML = a(data.email);
-  
+  alert(b)
  
   (go) = () => {
  alert.then(data.email)
