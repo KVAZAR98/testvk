@@ -5,7 +5,7 @@ let a = vkBridge.send('VKWebAppGetEmail')
       
   b = (data.email);
       
-  alert(b)
+  
 }
   })
   .catch((error) => {
@@ -15,7 +15,8 @@ let a = vkBridge.send('VKWebAppGetEmail')
   //document.getElementById("text").innerHTML = a(data.email);
  
  
- console.log(a["email"])
+alert("gfgfg");
+alert(b)
 
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
