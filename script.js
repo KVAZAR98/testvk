@@ -2,7 +2,7 @@ vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
     console.log(data)
-   alert(a)
+   
   }
   })
   .catch((error) => {
