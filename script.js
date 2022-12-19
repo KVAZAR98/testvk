@@ -11,9 +11,9 @@ let a = vkBridge.send('VKWebAppGetEmail')
     console.log(error);
   });
   //document.getElementById("text").innerHTML = a(data.email);
-  alert(b);
  
-  console.log(b);
+ 
+  console.log(a.email);
 
 
 //document.getElementById("div2").classList.remove("hidden");
