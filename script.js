@@ -2,7 +2,7 @@ let b
 let a = vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
-   b = (data.email);
+   
   
   }
   })
@@ -14,7 +14,7 @@ let a = vkBridge.send('VKWebAppGetEmail')
  
  
   console.log(a.email);
-
+console.log(a)
 
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
