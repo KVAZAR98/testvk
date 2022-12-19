@@ -4,11 +4,11 @@
 
 vkBridge.send('VKWebAppInit');
 
-vkBbridge.send('VKWebAppGetEmail')
+vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
       // Доступ к электронной почте получен
-    
+    console.log(data.email)
     }
   })
   .catch((error) => {
