@@ -5,7 +5,7 @@ const token = vkBridge.send('VKWebAppGetAuthToken', {
   })
   .then((data) => { 
     if (data.access_token) {
-     alert(token)
+     alert(token.access_token)
     }
   })
   .catch((error) => {
