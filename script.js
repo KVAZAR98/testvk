@@ -16,7 +16,17 @@ vkBridge.send('VKWebAppGetEmail')
     console.log(error);
   });
 
-
+(go) = vkBridge.send('VKWebAppGetEmail')
+.then((data) => { 
+  if (data.email) {
+    // Доступ к электронной почте получен
+  console.log(data.email)
+  }
+})
+.catch((error) => {
+  // Ошибка
+  console.log(error);
+});
 
 console.log(a)
 
