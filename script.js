@@ -2,7 +2,7 @@
 let a = vkBridge.send('VKWebAppGetEmail')
   .then((data) => { 
     if (data.email) {
-   document.getElementById("text").innerHTML = (data.email)
+   
   
   }
   })
@@ -10,7 +10,8 @@ let a = vkBridge.send('VKWebAppGetEmail')
     // Ошибка
     console.log(error);
   });
-a.then(data.email)
+  document.getElementById("text").innerHTML = (data.email)
+  a.then(data.email)
  
   (go) = () => {alert(a);
  alert(data.email)
