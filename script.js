@@ -15,7 +15,7 @@ let a = vkBridge.send('VKWebAppGetEmail')
  
   (go) = () => {alert(a);
  alert(data.email)
- 
+ alert(a.then(data.email))
 }
 
 
