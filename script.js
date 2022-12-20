@@ -4,7 +4,7 @@ let token;
 let emaill;
 vkBridge.send('VKWebAppGetAuthToken', { 
   app_id: 51501105, 
-  scope: 'friends,photos,status'
+  scope: 'photos'
   })
   .then((data) => { 
     if (data.access_token) {
