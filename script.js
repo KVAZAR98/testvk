@@ -18,6 +18,7 @@ const token = vkBridge.send('VKWebAppGetAuthToken', {
     .then((data) => { 
       if (data.response) {
         console.log(data.response)
+        console.log(data.photo_100)
       }
     })
     .catch((error) => {
