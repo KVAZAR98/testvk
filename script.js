@@ -17,7 +17,7 @@ vkBridge.send('VKWebAppGetAuthToken', {
     })
     .then((data) => { 
       if (data.photo_100) {
-      id = (data.iphoto_100);
+      id = (data.photo_100);
       
     }
     
