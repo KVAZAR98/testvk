@@ -17,7 +17,7 @@ vkBridge.send('VKWebAppGetAuthToken', {
     .then((data) => { 
       if (data.id) {
       alert(data.id)
-      alert(token)
+      
     }
     })
     .catch((error) => {
@@ -26,7 +26,8 @@ vkBridge.send('VKWebAppGetAuthToken', {
     });
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
-
+alert(token);
+alert("dfjfdfd");
 
 
 /*function go(event){
