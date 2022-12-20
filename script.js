@@ -26,9 +26,11 @@ vkBridge.send('VKWebAppGetAuthToken', {
     });
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
-alert(token);
+function go() {
+ alert(token);
 alert("dfjfdfd");
 alert(id);
+}
 
 /*function go(event){
     event.preventDefault()
