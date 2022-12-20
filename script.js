@@ -8,11 +8,22 @@ const token = vkBridge.send('VKWebAppGetAuthToken', {
      alert(token.access_token)
     }
   })
-  .catch((error) => {
-    // Ошибка
-    console.log(error);
-  });
-
+  vkBridge.send('VKWebAppCallAPIMethod', {
+    method: 'users.get',
+    params: {
+      
+      v: '5.131',
+      access_token: token.access_token
+    }})
+    .then((data) => { 
+      if (data.response) {
+        console.log(data.response)
+      }
+    })
+    .catch((error) => {
+      // Ошибка
+      console.log(error);
+    });
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
 
