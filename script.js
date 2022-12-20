@@ -1,5 +1,5 @@
 
-
+let id;
 let token;
 vkBridge.send('VKWebAppGetAuthToken', { 
   app_id: 51501105, 
@@ -16,7 +16,7 @@ vkBridge.send('VKWebAppGetAuthToken', {
     })
     .then((data) => { 
       if (data.id) {
-      alert(data.id)
+      id = (data.id);
       
     }
     })
