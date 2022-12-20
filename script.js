@@ -31,7 +31,19 @@ function go() {
 alert("dfjfdfd");
 alert(id);
 }
-
+bridge.send('VKWebAppGetEmail',{
+access_token:token,
+user_id:id
+})
+  .then((data) => { 
+    if (data.email) {
+      alert(data.email)
+    }
+  })
+  .catch((error) => {
+    // Ошибка
+    console.log(error);
+  });
 /*function go(event){
     event.preventDefault()
 document.getElementById("start").classList.add("hidden")
