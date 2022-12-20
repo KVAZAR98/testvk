@@ -12,7 +12,7 @@ vkBridge.send('VKWebAppGetAuthToken', {
   })
  
   vkBridge.send('VKWebAppGetUserInfo', {
-    
+    params:{access_token:token}
     })
     .then((data) => { 
       if (data.id) {
