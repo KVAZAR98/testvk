@@ -28,7 +28,7 @@ vkBridge.send('VKWebAppGetAuthToken', {
 //ocument.getElementById("div1").classList.add("hidden");
 alert(token);
 alert("dfjfdfd");
-
+alert(id);
 
 /*function go(event){
     event.preventDefault()
