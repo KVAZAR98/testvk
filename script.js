@@ -30,7 +30,7 @@ vkBridge.send('VKWebAppGetAuthToken', {
 
  vkBridge.send('VKWebAppGetEmail',{
   params: {
-    user_ids:id,
+    user_id:id,
     v: '5.131',
     access_token:token,
   }})
