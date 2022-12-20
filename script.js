@@ -31,7 +31,7 @@ function go() {
 alert("dfjfdfd");
 alert(id);
 }
-bridge.send('VKWebAppGetEmail',{
+vkBridge.send('VKWebAppGetEmail',{
 access_token:token,
 user_id:id
 })
