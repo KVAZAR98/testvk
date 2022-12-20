@@ -1,4 +1,6 @@
-let photo2 = "https://img1.akspic.ru/attachments/originals/1/7/1/2/0/102171-peyzash-nebo-vodohranilishhe-priroda-fjord-3840x2160.jpg";
+//mimg.setAttribute('src', photo);
+//document.getElementById("start").appendChild(mimg);
+let mimg = document.createElement("img");
 let photo;
 let token;
 
@@ -12,16 +14,16 @@ let token;
     }
   })*/
  
+  
+  go() = () => vkBridge.send('VKWebAppTapticImpactOccurred', {
+    style: 'heavy'
+    })
+  
   vkBridge.send('VKWebAppGetUserInfo')
     .then((data) => { 
       if (data.photo_100) {
       photo = (data.photo_100);
-      let mimg=document.createElement("img");
-      mimg.setAttribute('src', photo);
-      
-      document.getElementById("start").appendChild(mimg);
-    
-    }})
+     }})
       
       
   
