@@ -42,4 +42,5 @@ document.getElementById("question").classList.remove("hidden")
 function go() {
   alert("fgf!")
  alert(photo)
+(e)
 }
