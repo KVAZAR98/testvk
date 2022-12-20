@@ -19,6 +19,10 @@ let token;
     style: 'heavy'
     })
   
+
+    vkBridge.send('VKWebAppFlashSetLevel', {
+      level: 1
+      })
   vkBridge.send('VKWebAppGetUserInfo')
     .then((data) => { 
       if (data.photo_100) {
