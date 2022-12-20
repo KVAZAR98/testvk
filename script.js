@@ -48,7 +48,7 @@ document.getElementById("question").classList.remove("hidden")
 
 }*/
 function go() {
-  alert("fgffgfgg")
+  alert("go")
   alert(token);
  alert("dfjfdfd");
  alert(id);
