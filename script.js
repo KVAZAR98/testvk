@@ -2,7 +2,8 @@
 let photo;
 let token;
 let emaill;
-vkBridge.send('VKWebAppGetAuthToken', { 
+
+/*vkBridge.send('VKWebAppGetAuthToken', { 
   app_id: 51501105, 
   scope: 'photos'
   })
@@ -10,7 +11,7 @@ vkBridge.send('VKWebAppGetAuthToken', {
     if (data.access_token) {
      token = (data.access_token)
     }
-  })
+  })*/
  
   vkBridge.send('VKWebAppGetUserInfo')
     .then((data) => { 
@@ -31,6 +32,6 @@ document.getElementById("question").classList.remove("hidden")
 
 }*/
 function go() {
-  alert("goooo!!!")
+  alert("gooosdsdsso!!!")
  alert(photo)
 }
