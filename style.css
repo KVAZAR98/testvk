@@ -25,7 +25,7 @@ h1 {
     font-size: calc(5px + 3vw);
     font-weight: 700;
     color: #fff;
-    border: 2px solid #0000fa;
+    border: 2px solid #ffffff;
   }
 
 h2{
@@ -75,3 +75,9 @@ h2{
   .hidden{
     display: none;
   }
+  .divphoto{
+
+    border: solid 10px red;
+  width: 100px;
+height: 100px;
+}

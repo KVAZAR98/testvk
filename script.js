@@ -13,34 +13,33 @@ let token;
      token = (data.access_token)
     }
   })*/
- const e = vkBridge.send('VKWebAppTapticImpactOccurred', {
-    style: 'heavy'
-    })
-  function go(e) 
-
-    vkBridge.send('VKWebAppFlashSetLevel', {
-      level: 1
-      })
-  vkBridge.send('VKWebAppGetUserInfo')
-    .then((data) => { 
-      if (data.photo_100) {
+vkBridge.send('VKWebAppGetUserInfo')
+  .then((data) => {
+    if (data.photo_100) {
       photo = (data.photo_100);
-     }})
-      
-      
+    }
+  })
+
+
+function go(event) {
   
+    event.preventDefault()
+document.getElementById("start").classList.add("hidden")
+document.getElementById("question").classList.remove("hidden") 
+mimg.setAttribute('src', photo);
+document.getElementById("div3").appendChild(mimg);
+}
+  
+ 
+
+
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
 
- 
+
 /*function go(event){
     event.preventDefault()
 document.getElementById("start").classList.add("hidden")
 document.getElementById("question").classList.remove("hidden") 
 
 }*/
-function go() {
-  alert("f!")
- alert(photo)
-(e)
-}

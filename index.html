@@ -10,11 +10,8 @@
         content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
     
         <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-        <script>
-            // Отправляет событие инициализации нативному клиенту
-            vkBridge.send('VKWebAppInit');
-          </script>
-    </script>
+        <script>vkBridge.send('VKWebAppInit');</script>
+   
 </head>
 
 <body>
@@ -24,7 +21,7 @@
             <h2 id="text">Сколько ты продержишься в мире</h2>
             <h2 class="h2">Апокалипсиса?</h2>
         </div>
-        <div class="div1" onclick="go()"><button class="button-33" role="button">Начать</button></div>
+        <div class="div1" onclick="go(event)"><button class="button-33" role="button">Начать</button></div>
         
     </form>
     <form id="question" class="hidden">
@@ -33,8 +30,8 @@
             <h1>Вопрос 1</h1>
            
         </div>
-        <div class="div1" onclick="go()"><button class="button-33" role="button">Начать</button></div>
-
+        <div class="div1" onclick="go(event)"><button class="button-33" role="button">Начать</button></div>
+<div id="div3" class="divphoto">Фото</div>
     </form>
     <script type="text/javascript" src="script.js"></script>
 </body>
