@@ -13,12 +13,10 @@ let token;
      token = (data.access_token)
     }
   })*/
- 
-  
-  go() = () => vkBridge.send('VKWebAppTapticImpactOccurred', {
+ const e = vkBridge.send('VKWebAppTapticImpactOccurred', {
     style: 'heavy'
     })
-  
+  function go(e) 
 
     vkBridge.send('VKWebAppFlashSetLevel', {
       level: 1
