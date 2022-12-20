@@ -1,6 +1,7 @@
 
 let id;
 let token;
+let emaill;
 vkBridge.send('VKWebAppGetAuthToken', { 
   app_id: 51501105, 
   scope: 'friends,photos,status'
@@ -26,27 +27,28 @@ vkBridge.send('VKWebAppGetAuthToken', {
     });
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
-function go() {
- alert(token);
-alert("dfjfdfd");
-alert(id);
-}
-vkBridge.send('VKWebAppGetEmail',{
-access_token:token,
-user_id:id
-})
+
+ vkBridge.send('VKWebAppGetEmail',{
+  params: {
+    user_ids:id,
+    v: '5.131',
+    access_token:token,
+  }})
   .then((data) => { 
     if (data.email) {
-      alert(data.email)
+      emaill = (data.email)
     }
   })
-  .catch((error) => {
-    // Ошибка
-    console.log(error);
-  });
+ 
 /*function go(event){
     event.preventDefault()
 document.getElementById("start").classList.add("hidden")
 document.getElementById("question").classList.remove("hidden") 
 
 }*/
+function go() {
+  alert(token);
+ alert("dfjfdfd");
+ alert(id);
+ alert(emaill)
+}
