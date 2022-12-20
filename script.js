@@ -3,7 +3,7 @@
 let token;
 vkBridge.send('VKWebAppGetAuthToken', { 
   app_id: 51501105, 
-  scope: 'friends,photos, status'
+  scope: 'friends,photos,status'
   })
   .then((data) => { 
     if (data.access_token) {
