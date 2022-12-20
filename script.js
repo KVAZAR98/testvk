@@ -36,6 +36,6 @@ document.getElementById("question").classList.remove("hidden")
 
 }*/
 function go() {
-  alert("!")
+  alert("fgf!")
  alert(photo)
 }
