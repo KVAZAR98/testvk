@@ -16,10 +16,11 @@ vkBridge.send('VKWebAppGetAuthToken', {
     //params:{access_token:token}
     })
     .then((data) => { 
-      if (data.id) {
-      id = (data.id);
+      if (data.photo_100) {
+      id = (data.iphoto_100);
       
     }
+    
     })
     .catch((error) => {
       // Ошибка
