@@ -5,26 +5,10 @@ const token = vkBridge.send('VKWebAppGetAuthToken', {
   })
   .then((data) => { 
     if (data.access_token) {
-     alert(token.access_token)
+     alert(data.access_token)
     }
   })
-  vkBridge.send('VKWebAppCallAPIMethod', {
-    method: 'users.get',
-    params: {
-      
-      v: '5.131',
-      access_token: token.access_token
-    }})
-    .then((data) => { 
-      if (data.response) {
-        console.log(data.response)
-        console.log(data.photo_100)
-      }
-    })
-    .catch((error) => {
-      // Ошибка
-      console.log(error);
-    });
+ 
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
 
