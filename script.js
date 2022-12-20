@@ -17,7 +17,8 @@ let emaill;
     .then((data) => { 
       if (data.photo_100) {
       photo = (data.photo_100);
-      }
+      
+    }
     
     })
   
@@ -32,6 +33,6 @@ document.getElementById("question").classList.remove("hidden")
 
 }*/
 function go() {
-  alert("gooosdsdsso!!!")
+  alert("!")
  alert(photo)
 }
