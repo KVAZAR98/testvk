@@ -8,31 +8,35 @@
     <title>КвизТестОпросник</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
-    
-        <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-        <script>vkBridge.send('VKWebAppInit');</script>
-   
+
+    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    <script>vkBridge.send('VKWebAppInit');</script>
+
 </head>
 
 <body>
     <form id="start">
         <div>
-            <h1>Тест:Выживание!</h1>
+            <h1>Тест:Выживание</h1>
             <h2 id="text">Сколько ты продержишься в мире</h2>
             <h2 class="h2">Апокалипсиса?</h2>
+            <button onclick="go(event)" class="btn" role="button">Начать</button>
         </div>
-        <div class="div1" onclick="go(event)"><button class="button-33" role="button">Начать</button></div>
-        
     </form>
-    <form id="question" class="hidden">
+    <form id="result"  class="hidden">
         <div>
+            <h1>Результат</h1>
+            <h2 id="text">Выполнено</h2>
+            <div class="avaphoto"><img id="ava" src=""></div>
             
-            <h1>Вопрос 1</h1>
-           
         </div>
-        <div class="div1" onclick="go(event)"><button class="button-33" role="button">Начать</button></div>
-<div id="div3" class="divphoto">Фото</div>
     </form>
+   
+    
+    
+    
+    
+    
     <script type="text/javascript" src="script.js"></script>
 </body>
 

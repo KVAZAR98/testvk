@@ -1,83 +1,80 @@
 body {
-    background-image: url(fon.jpg);
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.8),
-            rgba(0, 0, 0, 0.8)),
-        url(fon.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646;
+  background-image: url(fon.jpg);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)),
+    url(fon.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 }
+
 div {
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    text-align: center;   
-    
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  display: inline-block;
 }
+
+
 
 
 h1 {
-    
-    font-size: calc(5px + 3vw);
-    font-weight: 700;
-    color: #fff;
-    border: 2px solid #ffffff;
-  }
-
-h2{
-    display: inline;
-    font-size: calc(5px + 5vw);
-    font-weight: 700;
-    color: #fff;   
-  
-}
-.h2{
-    color: #ff002b;
-
-}
-.div1{
-    position: fixed;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  
-}
-
-.button-33 {
  
-    background-color: #c2fbd7;
-    border-radius: 100px;
-    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-    color: green;
-    cursor: pointer;
-    display: inline-block;
-    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    padding: 7px 35px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 250ms;
-    border: 0;
-    font-size: 26px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .button-33:hover {
-    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-    transform: scale(1.05) rotate(-1deg);
-  }
-  .hidden{
-    display: none;
-  }
-  .divphoto{
+  font-size: calc(5px + 3vw);
+  font-weight: 700;
+  color: #fff;
+ 
+}
 
-    border: solid 10px red;
-  width: 100px;
-height: 100px;
+h2 {
+  display: inline;
+  font-size: calc(5px + 5vw);
+  color: #fff;
+ 
+}
+
+.h2 {
+  color: #ff002b;
+
+}
+
+.btn{
+  position: absolute;
+ top: 230%;
+ left: 50%;
+transform: translate(-50%, -50%) ;
+font-size: 36px;
+color: #fff;
+background-color: #05cd51;
+border-radius: 10px;
+width: 200px;
+border: solid 3px red;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.avaphoto {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  display: flex;
+  justify-content: center;
+  /*центрируем элемент по горизонтали */
+  align-items: center;
+  /* и вертикали */
+  width: 400px;
+  /* задали размеры блоку-родителю */
+  height: 400px;
+  overflow: hidden;
+  /* если элемент больше блока-родителя – обрезаем лишнее */
+border-radius: 50px;
+
 }
