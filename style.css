@@ -76,5 +76,6 @@ border: solid 3px red;
   overflow: hidden;
   /* если элемент больше блока-родителя – обрезаем лишнее */
 border-radius: 50px;
+border: #ff002b solid 5px;
 
 }

@@ -15,8 +15,8 @@ let ava123 = "fon.jpg";
   })*/
 vkBridge.send('VKWebAppGetUserInfo')
   .then((data) => {
-    if (data.photo_200) {
-      photo = (data.photo_max_orig);
+    if (data) {
+      photo = (data.photo_200);
     }
   })
 
