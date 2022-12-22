@@ -1,9 +1,10 @@
 //mimg.setAttribute('src', photo);
 //document.getElementById("start").appendChild(mimg);
 let mimg = document.createElement("img");
+let arb = document.getElementById("arb");
+let pist = document.getElementById("pist");
 let photo;
 let token;
-let ava123 = "fon.jpg";
 /*vkBridge.send('VKWebAppGetAuthToken', { 
   app_id: 51501105, 
   scope: 'photos'
@@ -19,14 +20,31 @@ vkBridge.send('VKWebAppGetUserInfo')
       photo = (data.photo_200);
     }
   })
-
-  
 function go(event) {
   event.preventDefault();
   document.getElementById("start").classList.add("hidden")
   document.getElementById("question1").classList.remove("hidden")
 
 }
+
+arb.onclick = () => {
+  document.getElementById("arb").classList.add("green")
+  setTimeout(question1, 400)
+}
+pist.onclick = () => {
+  document.getElementById("pist").classList.add("green")
+  setTimeout(question1, 400)
+}
+function question1() {
+  document.getElementById("question1").classList.add("hidden")
+  document.getElementById("question2").classList.remove("hidden")
+}
+
+
+
+
+
+
 
 
 
