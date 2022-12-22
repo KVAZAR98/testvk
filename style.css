@@ -70,9 +70,9 @@ border: solid 3px red;
   /*центрируем элемент по горизонтали */
   align-items: center;
   /* и вертикали */
-  width: 400px;
+  width: 200px;
   /* задали размеры блоку-родителю */
-  height: 400px;
+  height: 200px;
   overflow: hidden;
   /* если элемент больше блока-родителя – обрезаем лишнее */
 border-radius: 50px;
