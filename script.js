@@ -23,10 +23,8 @@ vkBridge.send('VKWebAppGetUserInfo')
   
 function go(event) {
   event.preventDefault();
-
- document.getElementById("ava").src = (photo);
   document.getElementById("start").classList.add("hidden")
-  document.getElementById("result").classList.remove("hidden")
+  document.getElementById("question1").classList.remove("hidden")
 
 }
 
@@ -35,7 +33,7 @@ function go(event) {
 
 //document.getElementById("div2").classList.remove("hidden");
 //ocument.getElementById("div1").classList.add("hidden");
-
+//document.getElementById("ava").src = (photo);
 
 /*function go(event){
     event.preventDefault()

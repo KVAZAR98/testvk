@@ -15,20 +15,22 @@
 </head>
 
 <body>
-    <form id="start">
+    <form id="start"class="hidden">
         <div>
-            <h1>Тест:Выживание</h1>
+            <h1>Тест: Выживание</h1>
             <h2 id="text">Сколько ты продержишься в мире</h2>
             <h2 class="h2">Апокалипсиса?</h2>
             <button onclick="go(event)" class="btn" role="button">Начать</button>
         </div>
     </form>
-    <form id="result"  class="hidden">
+    <form id="question1"  >
         <div>
-            <h1>Результат</h1>
-            <h2 id="text">Выполнено</h2>
-            <div class="avaphoto"><img id="ava" src=""></div>
-            
+            <h1>Вопрос: 1</h1>
+            <h2 id="text">Выбери оружие:</h2>
+            <hr color="red">
+            <div class="questionstyle"></div>
+            <h1>?</h1>
+            <div class="questionstyle"></div>
         </div>
     </form>
    
@@ -36,7 +38,7 @@
     
     
     
-    
+   <!--<div class="avaphoto"><img id="ava" src=""></div>-->
     <script type="text/javascript" src="script.js"></script>
 </body>
 
