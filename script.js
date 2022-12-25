@@ -42,13 +42,13 @@ a1.onclick = (event) => {
   event.preventDefault();
 
   a1.classList.add("green");
-  setTimeout(question1, 400);
+  setTimeout(question1, 150);
 
 }
 a2.onclick = (event) => {
   event.preventDefault();
   a2.classList.add("green");
-  setTimeout(question1, 400);
+  setTimeout(question1, 150);
 
 }
 
@@ -56,26 +56,26 @@ b1.onclick = (event) => {
   event.preventDefault();
 
   b1.classList.add("green");
-  setTimeout(question2, 400);
+  setTimeout(question2, 150);
 
 }
 b2.onclick = (event) => {
   event.preventDefault();
   b2.classList.add("green");
-  setTimeout(question2, 400);
+  setTimeout(question2, 150);
 
 }
 c1.onclick = (event) => {
   event.preventDefault();
 
   c1.classList.add("green");
-  setTimeout(result, 400);
+  setTimeout(result, 150);
 
 }
 c2.onclick = (event) => {
   event.preventDefault();
   c2.classList.add("green");
-  setTimeout(result, 400);
+  setTimeout(result, 150);
 
 }
 function question1() {
